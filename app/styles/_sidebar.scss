@@ -1,0 +1,22 @@
+aside.module-sidebar {
+    border-top: 1px solid #eee;
+    position: absolute;
+    height: 100%;
+    background-color: #fff;
+    overflow: scroll;
+    &.col {
+      padding: 0;
+    }
+  .menu {
+    li {
+      border-bottom: 1px solid #eee;
+      > a {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+        color: $text;
+      }
+    }
+  }
+}

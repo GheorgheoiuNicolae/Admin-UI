@@ -1,0 +1,188 @@
+// bower:scss
+// endbower
+
+
+@import "variables.scss";
+@import "_navbar.scss";
+@import "_sidebar.scss";
+@import "_dashboard.scss";
+
+body {
+  background: #f5f7f8;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+}
+.app-wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.module-wrap {
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #eee;
+  >.row {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0
+  }
+}
+section.module-content {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: scroll;
+  padding: 0.75rem!important;
+}
+.collection {
+  margin: 0;
+}
+
+.btn i {
+  color: #fff;
+}
+i {
+  color: $icon;
+}
+.panel {
+  .card-title {
+    text-align: left;
+  }
+}
+
+
+
+
+// table striped
+table.striped > tbody > tr:nth-child(odd) {
+  background-color: #f5f7f8;
+}
+// table controls 
+.controls {
+  a.round {
+    margin: 0 5px;
+    padding: 0;
+    border-radius: 35px;
+    display: block;
+    position: relative;
+    box-shadow: none!important;
+    width: 30px;
+    height: 30px;
+    i.edit {
+      margin: -3px 7px;
+    }
+    i.remove {
+      margin: -3px 6px;
+    }
+  }
+  a {
+    .tooltip {
+      //opacity: 0;
+      position: absolute;
+      top: 1px;
+      background-color: red;
+      z-index: 99;
+    }
+    &:hover {
+      .tooltip {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.card.create-article {
+  padding-bottom: 30px;
+}
+
+
+
+
+
+
+
+// Login page
+
+.app-wrap.login {
+  background-image: url("../images/big-bg.jpg");
+  background-size: cover;
+  .side {
+    height: 100%;
+    width: 400px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    h2 {
+      margin-bottom: 40px
+    }
+    .btn {
+      margin-top: 50px;
+    }
+  }
+}
+.lang-content {
+  // padding: 20px;
+  // border: 10px solid #eee;
+  ul.tabs {
+    margin-bottom: 30px;
+  }
+}
+
+
+.clearfix {
+  display: table;
+  width: 100%;
+}
+
+
+
+
+
+// Style for toggles in edit mode
+.panel.add, .panel.edit {
+  display: none;
+}
+.form-section {
+  margin-top: 30px
+}
+
+
+// Products Page
+p.product-checkbox label {
+  text-indent: -99999px;
+}
+.images section.image {
+  position: relative;
+  float: left;
+  max-width: 20%;
+  padding: 20px;
+  box-sizing: border-box;
+  img {
+    max-width: 100%
+  }
+  button.delete-image {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    border-radius: 100%;
+    border: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+  }
+}
+.labels {
+  margin: 20px 0;
+  .section-name {
+    margin-bottom: 20px!important;
+  }
+}

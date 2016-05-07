@@ -1,0 +1,190 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lutz Paletten Admin</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.css">
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+
+<div class="app-wrap">
+  <div class="top-bar">
+    <div class="row">
+      <div class="col s12 m3 l2 center">
+        <img src="images/logo.png" alt="">
+      </div>
+      <div class="col s12 m9 l10">
+        <a class="user btn-flat right">
+          <span class="username">John Snow</span>
+          <img src="images/avatar.jpg" alt="" class="user-avatar">
+          </a>
+      </div>
+    </div>
+  </div><!-- topbar -->
+
+  <div class="module-wrap">
+    <div class="row">
+      <aside class="module-sidebar col col s12 m3 l2">
+          <div class="menu">
+            <ul>
+              <li>
+                <a href="index.html" class="waves-effect waves-grey">
+                  <i class="material-icons left">dashboard</i>
+                  <span class="left">Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="slider.html" class="waves-effect waves-grey">
+                  <i class="material-icons left">view_carousel</i>
+                  <span class="left">Slider</span>
+                </a>
+              </li>
+              <li>
+                <a href="products.html" class="waves-effect waves-grey">
+                <i class="material-icons left">local_offer</i>
+                  <span class="left">Products</span>
+                </a>
+              </li>
+              <li>
+                <a href="categories.html" class="waves-effect waves-grey">
+                <i class="material-icons left">view_week</i>
+                  <span class="left">Categories</span>
+                </a>
+              </li>
+              <li>
+                <a href="labels.html" class="waves-effect waves-grey">
+                <i class="material-icons left">bookmark_border</i>
+                  <span class="left">Labels</span>
+                </a>
+              </li>
+              <li>
+                <a href="articles.html" class="waves-effect waves-grey">
+                  <i class="material-icons left">format_align_left</i>
+                  <span class="left">Articles</span>
+                </a>
+              </li>
+              <li>
+                <a href="accounts.html" class="waves-effect waves-grey">
+                  <i class="material-icons left">group</i>
+                  <span class="left">Accounts</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+      </aside>
+
+      <section class="module-content col s12 m9 l10 dashboard">
+        <div class="row">
+          <div class="col m4">
+            <div class="card cyan lighten-5">
+              <div class="card-content">
+                <p class="card-title center">Products</p>
+                <p class="card-number center">21</p>
+                <p class="center">Total number of products</p>
+              </div>
+              <div class="card-action">
+                <a href="#" class="center">Add a new product</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col m4">
+            <div class="card cyan lighten-5">
+              <div class="card-content">
+                <p class="card-title center">Articles</p>
+                <p class="card-number center">7</p>
+                <p class="center">Total number of articles</p>
+              </div>
+              <div class="card-action">
+                <a href="#" class="center">Write a new article</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col m4">
+            <div class="card cyan lighten-5">
+              <div class="card-content">
+                <p class="card-title center">Slider</p>
+                <p class="card-number center">4</p>
+                <p class="center">Total number of Slides</p>
+              </div>
+              <div class="card-action">
+                <a href="#" class="center">Create a new slide</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col m4">
+            <div class="card cyan lighten-5">
+              <div class="card-content">
+                <p class="card-title center">Users</p>
+                <p class="card-number center">3</p>
+                <p class="center">Total number of Users</p>
+              </div>
+              <div class="card-action">
+                <a href="#" class="center">Manage users</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col m8">
+            <div class="card cyan lighten-5">
+              <div class="card-content">
+                <p class="card-title center">Last time you accessed the admin</p>
+                <p class="card-number center">18.09.2015</p>
+                <p class="center">Total number of Users</p>
+              </div>
+              <div class="card-action">
+                <a href="#" class="center">Manage users</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div><!-- row -->
+  </div><!-- module-wrap -->
+</div><!-- app-wrap -->
+
+
+<!-- Modal Confirmation -->
+<div id="confirm" class="modal">
+  <div class="modal-content">
+    <h4>are you sure you want to remove this item?</h4>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Yes</a>
+  </div>
+</div>
+
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/Materialize/dist/js/materialize.min.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

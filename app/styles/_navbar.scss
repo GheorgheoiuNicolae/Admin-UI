@@ -1,0 +1,37 @@
+.top-bar {
+  background-color: white;
+  height: 60px;
+  color: #999;
+  img {
+    height: 55px;
+    &.user-avatar {
+      height: 35px;
+    }
+  }
+  h1 {
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-top: 0;
+    top: -5px;
+    position: relative;
+  }
+  .row {
+    margin-bottom: 0;
+  }
+  .col {
+    height: 100%;
+  }
+  .user {
+    position: relative;
+    top: 10px;
+    padding: 0 !important;
+    span.username {
+      position: relative;
+      top: -12px;
+      margin-right: 10px;
+    }
+    img {
+      border-radius: 20px;
+    }
+  }
+}
